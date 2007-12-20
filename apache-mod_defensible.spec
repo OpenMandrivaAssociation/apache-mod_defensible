@@ -23,6 +23,7 @@ Requires:	apache >= %{apache_version}
 BuildRequires:	apache-devel >= %{apache_version}
 BuildRequires:	udns-devel
 BuildRequires:	libtool
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 mod_defensible is an Apache 2.x module intended to block spammers using DNSBL
