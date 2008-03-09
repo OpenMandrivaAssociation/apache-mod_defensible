@@ -7,7 +7,7 @@
 Summary:	An Apache 2.x module intended to block spammers using DNSBL
 Name:		apache-%{mod_name}
 Version:	1.4
-Release:	%mkrel 1
+Release:	%mkrel 2
 Group:		System/Servers
 License:	GPL
 URL:		http://julien.danjou.info/mod_defensible.html
