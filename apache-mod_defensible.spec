@@ -43,7 +43,7 @@ libtoolize --force --copy; aclocal; automake --add-missing --copy --foreign; aut
 
 export APXS2="/usr/sbin/apxs"
 
-%configure2_5x \
+%configure2_5x --localstatedir=/var/lib \
     --with-udns
 
 %make
