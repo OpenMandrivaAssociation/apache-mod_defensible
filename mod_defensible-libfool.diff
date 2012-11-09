@@ -1,0 +1,14 @@
+--- Makefile.am	2007-01-19 17:46:12.000000000 +0100
++++ Makefile.am.oden	2007-11-22 08:11:12.000000000 +0100
+@@ -8,8 +8,9 @@
+ lib_LTLIBRARIES = mod_defensible.la 
+ 
+ mod_defensible_la_SOURCES = $(MODULESOURCES) 
+-mod_defensible_la_LDFLAGS = -module `${APXS2} -q LDFLAGS_SHLIB`
+-mod_defensible_la_CPPFLAGS = -I`${APXS2} -q INCLUDEDIR` 
++mod_defensible_la_LDFLAGS = -module -avoid-version
++mod_defensible_la_CPPFLAGS = -I`${APXS2} -q INCLUDEDIR` -I`apr-1-config --includedir` `apr-1-config --cppflags`
++
+ mod_defensible_la_CFLAGS = -W -Wall `${APXS2} -q CFLAGS CFLAGS_SHLIB` 
+ CC = `${APXS2} -q CC` 
+ 	   
