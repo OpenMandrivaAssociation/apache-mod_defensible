@@ -10,7 +10,7 @@ Version:	1.5
 Release:	2
 Group:		System/Servers
 License:	GPLv2+
-URL:		http://julien.danjou.info/mod_defensible.html
+URL:		https://julien.danjou.info/mod_defensible.html
 Source0:	%{mod_name}-%{version}.tar.xz
 Source1:	%{mod_conf}
 Patch0:		mod_defensible-1.5-rosa-libfool.patch
